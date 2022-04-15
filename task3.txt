@@ -17,8 +17,8 @@ What will be the result for these expressions ?
 "2">"12"  {true}
 undefined==null  {true}
 undefined===null  {false}
-null="\n0\n"   {}
-null=+"\n0\n"  {}
+null="\n0\n"   {}   false
+null=+"\n0\n"  {}   false
 
 
 [ problem 3 ]
@@ -55,7 +55,11 @@ Here we can assume that the visitor only inputs numbers. There’s no need to
 implement a special handling for a non-numeric input in this task.
 
 ---
-Didn't get the quetion
+
+let n=+prompt("Enter a number greater than 100 :");
+while(n<=100){
+    n=+prompt("Enter a number greater than 100 :");
+}
 
 ----------------------------
 
@@ -121,7 +125,25 @@ pow(3, 3) = 3 * 3 * 3 = 27
 pow(1, 100) = 1 * 1 * ...* 1 = 1
 Create a web-page that prompts for x and n, and then shows the result of pow(x,n).
 --------
-couldn't set the logic
+function pow(x, n) {
+    let i; 
+    let z=1;
+    for (i=0;i<=n-1;i++){
+    z=z*x;
+        
+    }
+return z;
+    
+}
+
+let x=+prompt("Enter the base number :");
+let n=+prompt("Enter the power number :");
+let c=pow(x, n);
+alert(c);
+
+
+
+
 
 
 
