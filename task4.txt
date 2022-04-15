@@ -1,0 +1,65 @@
+1. convert an array to string without tostring:
+----
+        let bikes=["hero","bajaj","tvs", "honda"];
+        console.log(typeof bikes);
+        console.log(bikes);
+        let str=bikes.join(" ");
+        console.log(typeof str);
+        console.log(str);
+
+------------------------------------------------------------
+
+2. function to accept an item and push that item to an array
+----
+  function push(item){
+           let bikes=["pulsar", "apache", "avanger"];
+           console.log(bikes);
+           bikes.push(item);
+           console.log(bikes);
+           
+           
+       }
+       push("bullet");
+
+--------------------------------------------------------------
+
+3.function to accept an item and pop that item to an array
+----
+ function pop(item){
+           let bikes=["pulsar", "apache", "avanger", "bullet"];
+           console.log(bikes);
+           bikes.pop(item);
+           console.log(bikes);
+           
+           
+       }
+       push("bullet");
+
+----------------------------------------------------------------
+
+4.function to accept an item,index and add that item to an array at a given index
+----
+function add(item){
+           let bikes=["pulsar", "apache", "avanger", "bullet"];
+           console.log(bikes);
+           bikes.splice(2, 0, item);
+           console.log(bikes);
+           
+           
+       }
+       add("ktm");
+
+------------------------------------------------------------------
+
+5.Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with
+values higher or equal to a and lower or equal to b and return a result as an array.
+The function should not modify the array. It should return the new array.
+For instance:
+let arr = [5, 3, 8, 1];
+let filtered = filterRange(arr, 1, 4);
+alert( filtered ); // 3,1 (matching values)
+alert( arr ); // 5,3,8,1 (not modified)
+----
+
+
+
